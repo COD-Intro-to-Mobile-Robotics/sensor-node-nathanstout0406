@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="param_pubsub" exec="talker" name="Bye_publisher">
+    <param name='my_parameter' value='Bye' />
+  </node>
+  <node pkg="param_pubsub" exec="talker" name="Hi_publisher" />
+  <node pkg="param_pubsub" exec="listener" />
+</launch>
