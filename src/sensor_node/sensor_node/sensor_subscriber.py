@@ -17,9 +17,9 @@ class MinimalSubscriber(Node):  # Create a new class called MinimalSubscriber th
 
     def listener_callback(self, msg):                       # Callback method to process received messages
         self.get_logger().info('I heard: "%s"' % msg.data)
-        if(msg.data == 0):
+        if(msg.data == 1):
             self.get_logger().info('IR is Dark')
-        elif(msg.data == 1):
+        elif(msg.data == 0):
             self.get_logger().info("IR is Light")
         elif(msg.data == INVALID):
             self.get_logger().info("INVALID pin")
