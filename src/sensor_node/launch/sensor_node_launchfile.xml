@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="sensor_node" exec="talker">
+    <param name="publish_rate" value="2" />
+    <param name="sensor_num" value="1" />
+  </node>
+
+  <node pkg="sensor_node" exec="listener" />
+
+</launch>
